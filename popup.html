@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 600px;
+      padding: 10px;
+    }
+
+    textarea {
+      width: 600px;
+      height: 200px;
+    }
+
+    .hint {
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .save-status {
+      display: none;
+      color: green;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>辞書データ登録 (TSV形式)</h3>
+  <div class="hint">※ タブの入力はTab キーで可能です</div>
+  <textarea id="dictionaryData" placeholder="検索キー[TAB]説明文"></textarea>
+  <button id="save">保存</button>
+  <span id="saveStatus" class="save-status">保存できました</span>
+  <script src="popup.js"></script>
+</body>
+
+</html>
